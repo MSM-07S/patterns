@@ -84,19 +84,20 @@ public class patterngen{
     }
 
     public static void eo(int maxE){
-        //precon: 
-        //postcon: 
+        //precon: a maximum value for E is put in (integer)
+        //postcon: the program will print E and O's alternating. Each new line has one more letter as it alternates. 
+        //once the length of maxE is hit, the program will do the same but each new line will have one less letter.
         System.out.println("eo runs");
         
-        String letter = "E";
+        String letter = "O";
         
             
             for (int i = 1; i <= maxE; i++){
 
                     if(i %2 == 0){
-                    letter= "O";
+                    letter= "E";
                     }else if (i % 2 != 0){
-                        letter = "E";
+                        letter = "O";
                     }
                    for(int j =0; j <i; j++){
                         System.out.print(letter);
@@ -125,8 +126,9 @@ public class patterngen{
     }
 
     public static void pyramid(int rows){
-        //precon: 
-        //postcon: 
+        //precon: input an integer
+        //postcon: will print [rows] amount of rows. each row has rows*2 - 1 numbers starting from 1 up to rows. each following row has 2 less numbers and has spacings to make it
+        //look like a pyramid pointing downwards.
 
         //when pyramid(5) is called:
 
